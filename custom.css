@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary: #216bdb;
+  --secondary: #fc0082;
+  --tertiary: #feb327;
+  --primary-60: #97d2f7;
+  --primary-10: #e6fbfe;
+  --secondary-60: #fd66b4;
+  --secondary-10: #ffe5f2;
+  --tertiary-60: #f7d493;
+  --tertiary-10: #fff7e9;
+  --blurry: #6f6686;
+  --blue-dark: #20179f;
+  --light: #f9f8fe;
+  --dark: #100036;
+}
+.color-theme {
+  --primary: #216bdb;
+  --secondary: #fc0082;
+  --tertiary: #feb327;
+  --primary-60: #97d2f7;
+  --primary-10: #e6fbfe;
+  --secondary-60: #fd66b4;
+  --secondary-10: #ffe5f2;
+  --tertiary-60: #f7d493;
+  --tertiary-10: #fff7e9;
+  --blurry: #6f6686;
+  --blue-dark: #20179f;
+  --light: #f9f8fe;
+  --dark: #100036;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: 'border-box';
+}
+
+header {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: inherit;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  -famifontly: 'Exo 2';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 1rem;
+  margin-left: 15rem;
+  margin-right: 5rem;
+}
+
+h2 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+p {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#h1-subtitle {
+  margin-left: 15rem;
+  margin-right: 60rem;
+}
+
+.navbar {
+  padding: 5rem 12rem;
+}
+
+.navbar-item {
+  font-family: inherit;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 2rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  margin: 0.5rem 3rem;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--light);
+  border-color: var(--primary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+  color: var(--light);
+  border-color: var(--secondary) !important;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 1em; /* Space between items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  margin: 0;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.nav-items a:hover {
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+
+.up {
+  text-align: right;
+}
