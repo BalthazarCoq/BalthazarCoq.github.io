@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
   --primary: #216bdb;
@@ -46,6 +47,7 @@ header {
   background-color: var(--dark);
   color: var(--light);
   font-family: inherit;
+  margin: 0;
 }
 
 body {
@@ -54,8 +56,12 @@ body {
   font-family: 'Exo 2', sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  margin: 0;
+  margin: 0rem;
   padding: 0;
+}
+
+#control-content {
+  margin: 5rem;
 }
 
 h1 {
@@ -63,9 +69,6 @@ h1 {
   font-style: italic;
   font-weight: 700;
   font-size: 4rem;
-  padding: 1rem;
-  margin-left: 15rem;
-  margin-right: 5rem;
 }
 
 h2 {
@@ -80,18 +83,16 @@ p {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  padding: 1rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  padding-bottom: 0rem;
 }
 
 #h1-subtitle {
-  margin-left: 15rem;
-  margin-right: 60rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .navbar {
-  padding: 5rem 12rem;
+  padding: 5rem 6rem;
 }
 
 .navbar-item {
@@ -101,12 +102,26 @@ p {
   margin: 4rem 2rem;
 }
 
+.boxhead {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Fira Code';
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.about-me {
+  margin-left: 20rem;
+  margin-right: 60rem;
+}
 .btn {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0.75rem 2.5rem;
   border-radius: 0.75rem;
   border: none;
-  margin: 0.5rem 3rem;
 }
 
 .btn-primary {
@@ -120,35 +135,52 @@ p {
   color: var(--light);
   border-color: var(--secondary) !important;
 }
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
+#btn-navbar {
+  margin: 0.5rem 3rem;
 }
 
-.nav-items {
-  list-style: none;
+/* Style all font awesome icons */
+.social-media-control {
   display: flex;
-  gap: 1em; /* Space between items */
-  margin: 0;
-  padding: 0;
+  justify-content: left; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  box-sizing: border-box;
 }
-
-.nav-items li {
-  margin: 0;
-}
-
-.nav-items a {
-  color: white;
+.fa {
+  display: inline-flex; /* Make the icons flex containers */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 10px; /* Adjust spacing between icons */
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  padding: 0.5em 1em;
+  border-radius: 15rem;
 }
 
-.nav-items a:hover {
-  background-color: var(--secondary);
-  border-radius: 5px;
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #0e76a8;
+  color: white;
+}
+.fa-github {
+  background: #333333;
+  color: white;
+}
+.fa-google {
+  background: #ea4335;
+  color: white;
 }
 
-.up {
+#btn-about {
+  margin: 3rem 0 3rem 0;
+}
+
+c .up {
   text-align: right;
 }

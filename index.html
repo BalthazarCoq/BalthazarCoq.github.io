@@ -9,13 +9,25 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
+    <!-- Add fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- Bootstrap
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -35,68 +47,76 @@
     <link rel="stylesheet" href="path/to/bootstrap.css" />
     -->
     <link rel="stylesheet" href="custom.css" />
-
-    <script></script>
   </head>
   <body>
     <!-- Navigation bar-->
     <header class="navbar">
       <div class="navbar-ctrl-brand">
-        <a href="#home" className="logo">
+        <a href="#home" class="logo boxhead">
           <span> &lt;</span>
-          <span className="navbar-brand">Balthazar Coquard</span>
+          <span className="navbar-brand boxhead">Balthazar Coquard</span>
           <span>/&gt;</span>
         </a>
       </div>
 
       <div class="navbar-ctrl-items">
-        <a href="#section1" class="navbar-item">About me</a>
-        <a href="#section1" class="navbar-item">Skills</a>
-        <a href="#section1" class="navbar-item">My projects</a>
-        <button class="btn btn-secondary">Contact me</button>
+        <a href="#section1" class="navbar-item boxhead">About me</a>
+        <a href="#section1" class="navbar-item boxhead">Skills</a>
+        <a href="#section1" class="navbar-item boxhead">My projects</a>
+        <button class="btn btn-secondary"" id = "btn-navbar">Let's talk</button>
       </div>
     </header>
 
     <!-- Introduction -->
-    <div>
-      <h1>Welcome to you ! <br /><span>I'm Balthazar</span></h1>
-      <p id="h1-subtitle">
-        Currently searching for a Junior Software position (Werkstudent /
-        Intern) to expand my programming know-how! <br />
-        Avid to learn from you, thrilled to get to know you !
-      </p>
-    </div>
+    <div id="control-content">
+      <div class="about-me">
+        <h1># Welcome to you ! <br /><span>{I'm Balthazar}</span></h1>
+        <p id="h1-subtitle">
+          Currently searching for a Junior Software position (Werkstudent /
+          Intern) to expand my programming know-how! <br />
+          Avid to learn from you, thrilled to get to know you !
+        </p>
 
-    <!-- About me -->
-    <div>
-      <h2>About me</h2>
-      <p>
-        I'm a French student living in Germany. [Self-taught programmer] in
-        Python and JavaScript, I am looking for [new opportunities in Munich] to
-        work on bigger scale project. Graduate from the B.A. International
-        Business & Management (Fachhochschule Münster) I plan on achieving the
-        [Master Management & Technology] at the TUM. Speaking [French, English,
-        German and Spanish], I love working with people from various
-        backgrounds.
-      </p>
-    </div>
+        <!--Social Network button -->
+        <div class="social-media-control">
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-google"></a>
+        </div>
+        <button class="btn btn-secondary about" id="btn-about">Let's talk</button>
+      </div>
 
-    <!-- Skills -->
-    <div>
+      <!-- About me -->
       <div>
-        <h2>Skills</h2>
-        <p>Backend : Python</p>
+        <h2>About me</h2>
+        <p>
+          I'm a French student living in Germany. [Self-taught programmer] in
+          Python and JavaScript, I am looking for [new opportunities in Munich]
+          to work on bigger scale project. Graduate from the B.A. International
+          Business & Management (Fachhochschule Münster) I plan on achieving the
+          [Master Management & Technology] at the TUM. Speaking [French,
+          English, German and Spanish], I love working with people from various
+          backgrounds.
+        </p>
       </div>
-      <div>
-        <h2>My projects</h2>
-        <p>Web development : Java Script</p>
-      </div>
-      <div>
-        <h2>UX / UI</h2>
-        <p>UI / UX</p>
-      </div>
-    </div>
 
-    <!-- My projects-->
+      <!-- Skills -->
+      <div>
+        <div>
+          <h2>Skills</h2>
+          <p>Backend : Python</p>
+        </div>
+        <div>
+          <h2>My projects</h2>
+          <p>Web development : Java Script</p>
+        </div>
+        <div>
+          <h2>UX / UI</h2>
+          <p>UI / UX</p>
+        </div>
+      </div>
+
+      <!-- My projects-->
+    </div>
   </body>
 </html>
