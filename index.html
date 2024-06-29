@@ -63,60 +63,113 @@
         <a href="#section1" class="navbar-item boxhead">About me</a>
         <a href="#section1" class="navbar-item boxhead">Skills</a>
         <a href="#section1" class="navbar-item boxhead">My projects</a>
-        <button class="btn btn-secondary"" id = "btn-navbar">Let's talk</button>
+        <button class="btn btn-secondary" id="btn-navbar">Let's talk</button>
       </div>
     </header>
 
     <!-- Introduction -->
-    <div id="control-content">
-      <div class="about-me">
-        <h1># Welcome to you ! <br /><span>{I'm Balthazar}</span></h1>
-        <p id="h1-subtitle">
-          Currently searching for a Junior Software position (Werkstudent /
-          Intern) to expand my programming know-how! <br />
-          Avid to learn from you, thrilled to get to know you !
-        </p>
+    <div class="introduction">
+      <h1 class="font-light">
+        # Welcome to you ! <br /><span>{I'm Balthazar}</span>
+      </h1>
+      <p class="font-light" id="h1-subtitle">
+        Currently searching for a Junior Software position (Werkstudent /
+        Intern) to expand my programming know-how! <br />
+        Avid to learn from you, thrilled to get to know you !
+      </p>
 
-        <!--Social Network button -->
-        <div class="social-media-control">
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-google"></a>
-        </div>
-        <button class="btn btn-secondary about" id="btn-about">Let's talk</button>
+      <!--Social Network button -->
+      <div class="social-media-control">
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-github"></a>
+        <a href="#" class="fa fa-google"></a>
       </div>
-
-      <!-- About me -->
-      <div>
-        <h2>About me</h2>
-        <p>
-          I'm a French student living in Germany. [Self-taught programmer] in
-          Python and JavaScript, I am looking for [new opportunities in Munich]
-          to work on bigger scale project. Graduate from the B.A. International
-          Business & Management (Fachhochschule Münster) I plan on achieving the
-          [Master Management & Technology] at the TUM. Speaking [French,
-          English, German and Spanish], I love working with people from various
-          backgrounds.
-        </p>
-      </div>
-
-      <!-- Skills -->
-      <div>
-        <div>
-          <h2>Skills</h2>
-          <p>Backend : Python</p>
-        </div>
-        <div>
-          <h2>My projects</h2>
-          <p>Web development : Java Script</p>
-        </div>
-        <div>
-          <h2>UX / UI</h2>
-          <p>UI / UX</p>
-        </div>
-      </div>
-
-      <!-- My projects-->
+      <button class="btn btn-secondary about" id="btn-introduction">
+        Let's talk
+      </button>
     </div>
+
+    <!-- About me -->
+
+    <div class="div-bg-light">
+      <div class="container">
+        <h2 class="font-dark container content-width">## About me</h2>
+        <p class="font-dark content-width">
+          I'm a French student living in Germany.
+          <span class="highlight-box-shadow"> [Self-taught programmer] </span>
+          in Python and JavaScript, I am looking for
+          <span class="highlight-box-shadow">
+            [new opportunities in Munich]
+          </span>
+          to work on bigger scale project. <br />
+          <br />
+          Graduate from the B.A. International Business & Management
+          (Fachhochschule Münster) I plan on achieving the
+          <span class="highlight-box-shadow">
+            [Master Management & Technology]
+          </span>
+          at the TUM. Speaking
+          <span class="highlight-box-shadow">
+            [French, English, German and Spanish] </span
+          >, I love working with people from various backgrounds.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="overlay-skills">
+      <div class="control-skill" id="skill-1">
+        <div class="skill title">
+          <div class="skill icon">X</div>
+          <h3 class="skill">Backend</h3>
+        </div>
+
+        <div class="skill content">
+          <div class="skill horizontal-band">
+            <span class="skill tag">&lt;h3&gt;</span>
+            <div class="rectangle"></div>
+            <span class="skill tag">&lt;/h3&gt; </span>
+          </div>
+          <p class="skill">
+            After finishing the Udemy course about Python; I decided to learn
+            more about Frameworks, with 2 projects in work (Django, Flask). Data
+            management is essential, therefore I am also currently forming
+            myself to SQL.
+          </p>
+        </div>
+      </div>
+
+      <div class="control-skill" id="skill-2">
+        <div class="icon">X</div>
+        <div class="content">
+          <h3>Backend</h3>
+          <p>
+            After finishing the Udemy course about Python; I decided to learn
+            more about Frameworks, with 2 projects in work (Django, Flask). Data
+            management is essential, therefore I am also currently forming
+            myself to SQL.
+          </p>
+        </div>
+      </div>
+      <div class="control-skill" id="skill-3"></div>
+    </div>
+
+    <!-- Projects -->
+    <div class="font-light">
+      <div>
+        <h2>Skills</h2>
+        <p>Backend : Python</p>
+      </div>
+      <div>
+        <h2>My projects</h2>
+        <p>Web development : Java Script</p>
+      </div>
+      <div>
+        <h2>UX / UI</h2>
+        <p>UI / UX</p>
+      </div>
+    </div>
+
+    <!-- My projects-->
   </body>
 </html>

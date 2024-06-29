@@ -52,12 +52,11 @@ header {
 
 body {
   background-color: var(--dark);
-  color: var(--light);
   font-family: 'Exo 2', sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
   margin: 0rem;
-  padding: 0;
+  padding: 0rem;
 }
 
 #control-content {
@@ -68,13 +67,21 @@ h1 {
   -famifontly: 'Exo 2';
   font-style: italic;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 
 h2 {
   font-family: 'Exo 2', sans-serif;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 3.6rem;
+  padding: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
   padding: 1rem;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -84,41 +91,29 @@ p {
   font-size: inherit;
   font-weight: inherit;
   padding-bottom: 0rem;
+  line-height: 2.5rem;
 }
 
-#h1-subtitle {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.font-dark {
+  color: var(--dark);
 }
 
-.navbar {
-  padding: 5rem 6rem;
-}
-
-.navbar-item {
-  font-family: inherit;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4rem 2rem;
-}
-
-.boxhead {
+.font-light {
   color: var(--light);
-  text-decoration: none;
 }
 
-.logo {
-  font-family: 'Fira Code';
-  font-size: 1.75rem;
-  font-weight: bold;
+.highlight-box-shadow {
+  display: inline;
+  font-style: italic;
+  font-weight: 600;
+  box-shadow:
+    inset 0 -0.5rem 0 var(--tertiary),
+    0 0.3rem 0 var(--tertiary);
 }
 
-.about-me {
-  margin-left: 20rem;
-  margin-right: 60rem;
-}
 .btn {
   font-size: 2rem;
+  font-weight: 600;
   padding: 0.75rem 2.5rem;
   border-radius: 0.75rem;
   border: none;
@@ -135,8 +130,43 @@ p {
   color: var(--light);
   border-color: var(--secondary) !important;
 }
+
+.navbar {
+  padding: 4rem 8rem;
+}
+
+.navbar-item {
+  font-family: inherit;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 3.5rem;
+}
+
+.boxhead {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Fira Code';
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
 #btn-navbar {
   margin: 0.5rem 3rem;
+}
+
+.introduction {
+  margin-left: 20rem;
+  margin-right: 60rem;
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+#h1-subtitle {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 45rem;
 }
 
 /* Style all font awesome icons */
@@ -177,8 +207,137 @@ p {
   color: white;
 }
 
-#btn-about {
+#btn-introduction {
   margin: 3rem 0 3rem 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-width {
+  width: 70rem;
+}
+
+.div-bg-light {
+  background-color: var(--light);
+  height: 50rem;
+  padding: 10rem 0 10rem 0;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay-skills {
+  display: flex;
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120rem;
+  height: 40rem;
+  background-color: var(--light);
+  border-style: solid;
+  border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
+  border-color: var(--dark);
+  color: var(--dark);
+  text-align: center;
+  line-height: 10rem; /* Vertically center text */
+  z-index: 10; /* Ensure it is on top of other elements */
+}
+.control-skill {
+  position: relative;
+  max-height: 100%;
+  width: 33.333%;
+  z-index: 20;
+  border-style: solid;
+  border-width: 0rem 0.2rem 0rem 0.2rem;
+  border-color: var(--dark);
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
+}
+#skill-1 {
+  background-color: var(--tertiary-10);
+}
+
+#skill-2 {
+  background-color: var(--secondary-10);
+}
+
+#skill-3 {
+  background-color: var(--primary-10);
+}
+
+.skill.title {
+  display: flex;
+  height: 25%;
+  max-width: 100%;
+  justify-content: left;
+  align-items: center;
+  margin-left: 0rem;
+}
+.skill.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--tertiary); /* Yellow background */
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%; /* Make it round */
+  margin-right: 2rem; /* Space between icon and content */
+  margin-left: 4rem;
+}
+
+h3.skill {
+  margin-left: 0rem;
+}
+.skill.content {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+.skill.horizontal-band {
+  width: 20%;
+  height: 85%;
+  margin: 1rem 1rem 5rem 5rem;
+  display: grid;
+  align-items: center;
+}
+
+.rectangle {
+  width: 0.2rem;
+  height: 15rem;
+  background: var(--blurry);
+}
+
+.skill.tag {
+  color: var(--blurry);
+  height: 2rem;
+}
+p.skill {
+  text-align: left;
+  margin: 3rem 2rem 5rem 1rem;
+}
+.about-me {
+  padding: 0 30rem 0 30rem;
+  margin: 3rem 3rem;
+  width: 60rem;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 c .up {
