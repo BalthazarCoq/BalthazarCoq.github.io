@@ -525,56 +525,147 @@ span.category {
 
 .contact.div-bg-yellow {
   background-color: var(--tertiary-10);
-  height: 75rem;
-  padding: 5% 0 0 0;
+  height: 65rem;
+  padding: 3% 0 0 0;
   width: 100%;
   display: flex;
 }
 
 .contact.div-form {
   display: flex;
-  background-color: var(--tertiary-60);
-  height: 90%;
+  flex-direction: column;
+  justify-items: center;
+  align-items: left;
+  background-color: var(--tertiary-10);
+  height: 100%;
   width: 50%;
+  padding: 0 0 0 15%;
   position: relative;
 }
 .contact.div-bear {
   display: flex;
-  background-color: var(--primary-60);
-  height: 90%;
+  flex-direction: column;
+  background-color: var(--tertiary-10);
+  height: 100%;
   width: 50%;
 }
 
 h2.contact {
+  padding: 0 0 0 0;
+  margin: 8rem 0 2rem 0;
+  width: 70%;
+}
+p.contact {
+  width: 70%;
+  margin: 0 0 2rem 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 3rem 2rem 2rem 0;
 }
-.input-div {
+.input-contact-details {
   display: flex;
-  gap: 2em; /* Space between the input boxes */
+  align-self: flex-start;
+  width: 100%;
+  gap: 5%; /* Space between the input boxes */
+}
+
+.input-message {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+  height: 15rem;
+  margin: 1rem 0 0 0;
 }
 
 input[type='text'],
 input[type='email'] {
-  width: calc(5 * 1em); /* Width ratio */
-  height: 2em; /* Adjust as necessary for height */
+  width: 45%;
+  height: 2.5rem; /* Adjust as necessary for height */
   padding: 0.5em;
-  margin-bottom: 20px; /* Space below the input fields */
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 2rem; /* Space below the input fields */
+  border: 1px solid var(--dark);
+  border-radius: 1rem;
+  background-color: var(--tertiary-60);
+  color: var(--dark);
 }
 
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+  color: var(--dark);
+}
+input[type='message']::placeholder {
+  color: var(--dark);
+}
 input[type='message'] {
+  width: 100%; /* Width ratio */
+  height: 100%; /* Adjust as necessary for height */
+  padding: 0.5em;
+  margin-bottom: 20px; /* Space below the input fields */
+  border: 1px solid var(--dark);
+  border-radius: 2rem;
+  background-color: var(--tertiary-60);
+  color: var(--dark);
+}
+
+.btn.btn-send-form {
+  background-color: var(--tertiary);
+  border: 1px solid var(--dark);
+  border-radius: 1rem;
+  width: 12rem;
+  align-self: flex-start;
+  margin: 5.5rem 0 0 0;
+}
+
+.bear-logo {
+  height: 60%;
+  width: 70%;
+  padding: 5rem 5rem 5rem 5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+p.email {
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.contact.social-media-control {
+  width: 70%;
+  justify-content: center;
+  align-self: center;
 }
 .footer {
-  height: 20rem;
+  height: 10rem;
   width: 100%;
-  background-color: var(--dark);
+  background-color: var(--tertiary-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+p.developped-by {
+  color: var(--dark);
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+}
+p.to-do {
+  color: var(--dark);
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-style: italic;
 }
 .up {
   margin: 15rem;
