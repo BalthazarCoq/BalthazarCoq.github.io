@@ -117,17 +117,46 @@ p {
   font-weight: 600;
   padding: 0.75rem 2.5rem;
   border-radius: 0.75rem;
-  border: none;
+  border-style: solid;
+  border-color: transparent;
   min-width: 10rem;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background-color: var(--primary) !important;
+  background-color: var(--primary);
+  color: var(--light);
+  transition: var(--primary) 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--dark);
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: var(--primary);
+}
+.btn-primary:active {
+  background-color: var(--secondary);
   color: var(--light);
 }
 
 .btn-secondary {
-  background-color: var(--secondary) !important;
+  background-color: var(--secondary);
+  color: var(--light);
+  transition: var(--secondary) 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: var(--light);
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: var(--secondary);
+}
+
+.btn-secondary:active {
+  background-color: var(--secondary);
   color: var(--light);
 }
 
@@ -136,7 +165,6 @@ p {
   align-items: center;
   height: 10rem;
   width: 100%;
-  margin: 0 5rem;
 }
 
 /* HEADER - Left : Logo Brand with spans*/
@@ -146,6 +174,7 @@ p {
   align-items: center;
   width: 30rem;
   height: 5rem;
+  margin: 1rem 5rem;
 }
 
 .boxhead {
@@ -163,8 +192,8 @@ p {
 .navbar-ctrl-items {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-left: auto;
+  gap: 2rem;
+  margin: 1rem 5rem;
   max-width: calc(
     100% - 30rem
   ); /* Adjust based on the width of .navbar-ctrl-brand */
@@ -180,7 +209,8 @@ p {
 }
 
 #btn-navbar {
-  margin-left: 1.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 /* INTRODUCTION - Left : Content*/
@@ -205,9 +235,12 @@ p {
 
 .introduction.logo-form {
   width: 50%;
-  background-color: lightblue;
-  justify-content: center;
-  align-items: center;
+  padding: 3rem;
+  display: block;
+}
+
+.img-intro {
+  display: block;
 }
 
 #h1-subtitle {
@@ -257,7 +290,7 @@ p {
 
 #btn-introduction {
   margin: 2rem 0 3rem 0;
-  width: 12rem;
+  width: 15rem;
 }
 
 .container {
@@ -586,6 +619,18 @@ span.category {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.btn-project-discover:hover {
+  background-color: var(--primary-10);
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+.btn-project-discover:active {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
 #right-card1 {
   border-radius: 0.75rem 0.75rem 0 0;
 }
@@ -655,8 +700,9 @@ p.contact {
 }
 
 .input-message {
-  display: flex;
-  align-self: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 15rem;
   margin: 1rem 0 0 0;
@@ -674,13 +720,6 @@ input[type='email'] {
   color: var(--dark);
 }
 
-input[type='text']::placeholder,
-input[type='email']::placeholder {
-  color: var(--dark);
-}
-input[type='message']::placeholder {
-  color: var(--dark);
-}
 input[type='message'] {
   width: 100%; /* Width ratio */
   height: 100%; /* Adjust as necessary for height */
@@ -692,6 +731,16 @@ input[type='message'] {
   color: var(--dark);
 }
 
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+  color: var(--dark);
+}
+input[type='message']::placeholder {
+  color: var(--dark);
+  position: relative;
+  top: -4.5rem;
+}
+
 .btn.btn-send-form {
   background-color: var(--tertiary);
   border: 1px solid var(--dark);
@@ -700,6 +749,16 @@ input[type='message'] {
   align-self: flex-start;
   margin: 5.5rem 0 0 0;
 }
+.btn.btn-send-form:hover {
+  background-color: var(--tertiary-10);
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+.btn.btn-send-form:active {
+  background-color: var(--tertiary);
+  color: var(--dark);
+}
 
 .bear-logo {
   height: 60%;
@@ -707,6 +766,9 @@ input[type='message'] {
   padding: 5rem 5rem 5rem 5rem;
   justify-self: center;
   align-self: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 p.email {
