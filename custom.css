@@ -47,7 +47,7 @@ header {
   background-color: var(--dark);
   color: var(--light);
   font-family: inherit;
-  margin: 0;
+  width: 100%;
 }
 
 body {
@@ -64,7 +64,7 @@ body {
 }
 
 h1 {
-  -famifontly: 'Exo 2';
+  font-family: 'Exo 2';
   font-style: italic;
   font-weight: 700;
   font-size: 4.8rem;
@@ -118,6 +118,7 @@ p {
   padding: 0.75rem 2.5rem;
   border-radius: 0.75rem;
   border: none;
+  min-width: 10rem;
 }
 
 .btn-primary {
@@ -131,14 +132,20 @@ p {
 }
 
 .navbar {
-  padding: 4rem 8rem;
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  margin: 0 5rem;
 }
 
-.navbar-item {
-  font-family: inherit;
-  justify-content: space-between;
+/* HEADER - Left : Logo Brand with spans*/
+.navbar-ctrl-brand {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 4rem 3.5rem;
+  width: 30rem;
+  height: 5rem;
 }
 
 .boxhead {
@@ -152,14 +159,55 @@ p {
   font-weight: bold;
 }
 
-#btn-navbar {
-  margin: 0.5rem 3rem;
+/* HEADER - Right : Navigation items*/
+.navbar-ctrl-items {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: auto;
+  max-width: calc(
+    100% - 30rem
+  ); /* Adjust based on the width of .navbar-ctrl-brand */
 }
 
-.introduction {
-  margin-left: 20rem;
-  margin-right: 60rem;
-  padding: 3rem 5rem 3rem 5rem;
+.navbar-item {
+  font-family: inherit;
+  min-width: 12rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+#btn-navbar {
+  margin-left: 1.5rem;
+}
+
+/* INTRODUCTION - Left : Content*/
+
+.introduction.control {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.introduction.content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-content: right;
+  padding: 2rem 0 2rem 30rem;
+}
+
+.introduction.logo-form {
+  width: 50%;
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
 }
 
 #h1-subtitle {
@@ -174,12 +222,13 @@ p {
   justify-content: left; /* Center horizontally */
   align-items: center; /* Center vertically */
   box-sizing: border-box;
+  margin: 2rem 0 0 0;
 }
 .fa {
   display: inline-flex; /* Make the icons flex containers */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  margin: 0 10px; /* Adjust spacing between icons */
+  margin: 0 0.5rem; /* Adjust spacing between icons */
   font-size: 2rem;
   width: 4rem;
   height: 4rem;
@@ -207,7 +256,8 @@ p {
 }
 
 #btn-introduction {
-  margin: 3rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
+  width: 12rem;
 }
 
 .container {
@@ -379,7 +429,7 @@ p.skill {
   font-weight: bold;
 }
 
-/* Styling of the -- My projects -- section */
+/* MY PROJECTS - Styling of the -- My projects -- section */
 
 .project-container {
   display: flex;
@@ -433,14 +483,30 @@ h2.project-title {
   display: flex;
 }
 
-#card-left-tertiary {
+.card-left-tertiary {
   background-color: var(--tertiary-10);
 }
-#card-left-secondary {
+.card-left-secondary {
   background-color: var(--secondary-10);
 }
-#card-left-primary {
+.card-left-primary {
   background-color: var(--primary-10);
+}
+
+#left-card1 {
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+#left-card2 {
+  border-radius: 0 0 0 0;
+}
+#left-card3 {
+  border-radius: 0 0 0 0;
+}
+#left-card4 {
+  border-radius: 0 0 0 0;
+}
+#left-card5 {
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 
 span.card-category {
@@ -474,8 +540,8 @@ span.category {
 }
 .card-category.highlight-box-shadow.primary {
   box-shadow:
-    inset 0 -1.3rem 0 var(--primary),
-    0 0.3rem 0 var(--primary);
+    inset 0 -1.3rem 0 var(--primary-60),
+    0 0.3rem 0 var(--primary-60);
 }
 
 .card-category.highlight-box-shadow.secondary {
@@ -490,13 +556,13 @@ span.category {
     0 0.3rem 0 var(--tertiary);
 }
 
-#card-right-tertiary {
+.card-right-tertiary {
   background-color: var(--tertiary);
 }
-#card-right-secondary {
+.card-right-secondary {
   background-color: var(--secondary);
 }
-#card-right-primary {
+.card-right-primary {
   background-color: var(--primary-60);
 }
 
@@ -519,6 +585,21 @@ span.category {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#right-card1 {
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+#right-card2 {
+  border-radius: 0 0 0 0;
+}
+#right-card3 {
+  border-radius: 0 0 0 0;
+}
+#right-card4 {
+  border-radius: 0 0 0 0;
+}
+#right-card5 {
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 
 /* Contact me*/
