@@ -6,6 +6,7 @@
   --secondary: #fc0082;
   --tertiary: #feb327;
   --primary-60: #97d2f7;
+  --primary-30: #cbe8fb;
   --primary-10: #e6fbfe;
   --secondary-60: #fd66b4;
   --secondary-10: #ffe5f2;
@@ -21,6 +22,7 @@
   --secondary: #fc0082;
   --tertiary: #feb327;
   --primary-60: #97d2f7;
+  --primary-30: #cbe8fb;
   --primary-10: #e6fbfe;
   --secondary-60: #fd66b4;
   --secondary-10: #ffe5f2;
@@ -162,6 +164,7 @@ p {
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 10rem;
   width: 100%;
@@ -170,7 +173,6 @@ p {
 /* HEADER - Left : Logo Brand with spans*/
 .navbar-ctrl-brand {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 30rem;
   height: 5rem;
@@ -180,6 +182,12 @@ p {
 .boxhead {
   color: var(--light);
   text-decoration: none;
+}
+a.boxhead:hover {
+  color: var(--primary-30);
+}
+a.boxhead:active {
+  color: var(--primary-60);
 }
 
 .logo {
