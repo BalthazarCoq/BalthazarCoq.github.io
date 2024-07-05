@@ -133,65 +133,71 @@
 
     <!-- Skills -->
     <section id="skills">
-      <div class="overlay-skills">
-        <div class="control-skill" id="skill-1">
-          <div class="skill title">
-            <div class="skill icon icon1">X</div>
-            <h3 class="skill">Backend</h3>
-          </div>
-
-          <div class="skill content">
-            <div class="skill horizontal-band">
-              <span class="skill tag">&lt;h3&gt;</span>
-              <div class="rectangle"></div>
-              <span class="skill tag">&lt;/h3&gt; </span>
-            </div>
-            <p class="skill">
-              After finishing the Udemy course about Python; I decided to learn
-              more about Frameworks, with 2 projects in work (Django, Flask).
-              Data management is essential, therefore I am also currently
-              forming myself to SQL.
-            </p>
-          </div>
+      <div class="skill section-control">
+        <div class="skill-bg light">
+          <h2 class="section-title">## Skills</h2>
         </div>
-
-        <div class="control-skill" id="skill-2">
-          <div class="skill title">
-            <div class="skill icon icon2">X</div>
-            <h3 class="skill">Web Development</h3>
-          </div>
-
-          <div class="skill content">
-            <div class="skill horizontal-band">
-              <span class="skill tag">&lt;h3&gt;</span>
-              <div class="rectangle"></div>
-              <span class="skill tag">&lt;/h3&gt; </span>
+        <div class="skill-bg dark"></div>
+        <div class="overlay-skills">
+          <div class="control-skill" id="skill-1">
+            <div class="skill title">
+              <div class="skill icon icon1">X</div>
+              <h3 class="skill">Backend</h3>
             </div>
-            <p class="skill">
-              My marketing background combined with my curiosity led me towards
-              informatic and design, where it met web development. Currently
-              following a Javascript class on Udemy, I have now strong
-              foundations in JS, HTML and CSS
-            </p>
-          </div>
-        </div>
-        <div class="control-skill" id="skill-3">
-          <div class="skill title">
-            <div class="skill icon icon3">X</div>
-            <h3 class="skill">UI/UX</h3>
+
+            <div class="skill content">
+              <div class="skill horizontal-band">
+                <span class="skill tag">&lt;h3&gt;</span>
+                <div class="rectangle"></div>
+                <span class="skill tag">&lt;/h3&gt; </span>
+              </div>
+              <p class="skill">
+                After finishing the Udemy course about Python; I decided to
+                learn more about Frameworks, with 2 projects in work (Django,
+                Flask). Data management is essential, therefore I am also
+                currently forming myself to SQL.
+              </p>
+            </div>
           </div>
 
-          <div class="skill content">
-            <div class="skill horizontal-band">
-              <span class="skill tag">&lt;h3&gt;</span>
-              <div class="rectangle"></div>
-              <span class="skill tag">&lt;/h3&gt; </span>
+          <div class="control-skill" id="skill-2">
+            <div class="skill title">
+              <div class="skill icon icon2">X</div>
+              <h3 class="skill">Web Development</h3>
             </div>
-            <p class="skill">
-              In my last company, I had the chance to develop 2 internal
-              applications using the Microsoft Power Apps. It confirms my
-              attraction to the fields of design, informatic and UI/UX.
-            </p>
+
+            <div class="skill content">
+              <div class="skill horizontal-band">
+                <span class="skill tag">&lt;h3&gt;</span>
+                <div class="rectangle"></div>
+                <span class="skill tag">&lt;/h3&gt; </span>
+              </div>
+              <p class="skill">
+                My marketing background combined with my curiosity led me
+                towards informatic and design, where it met web development.
+                Currently following a Javascript class on Udemy, I have now
+                strong foundations in JS, HTML and CSS
+              </p>
+            </div>
+          </div>
+          <div class="control-skill" id="skill-3">
+            <div class="skill title">
+              <div class="skill icon icon3">X</div>
+              <h3 class="skill">UI/UX</h3>
+            </div>
+
+            <div class="skill content">
+              <div class="skill horizontal-band">
+                <span class="skill tag">&lt;h3&gt;</span>
+                <div class="rectangle"></div>
+                <span class="skill tag">&lt;/h3&gt; </span>
+              </div>
+              <p class="skill">
+                In my last company, I had the chance to develop 2 internal
+                applications using the Microsoft Power Apps. It confirms my
+                attraction to the fields of design, informatic and UI/UX.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -314,13 +320,32 @@
           <p class="contact">
             To meet on a walk or just say hi, my inbox is open for all :
           </p>
-          <form class="contact-form">
+          <form id="contact-form" class="contact-form">
             <div class="input-contact-details">
-              <input type="text" name="name" placeholder="Name" />
-              <input type="email" name="email" placeholder="Email address" />
+              <input
+                type="text"
+                id="object"
+                name="object"
+                placeholder="Object"
+                required
+              />
+              <input
+                type="email"
+                id="fromEmail"
+                name="fromEmail"
+                placeholder="Your email address"
+                required
+              />
             </div>
             <div class="input-message">
-              <input type="message" name="message" placeholder="Your message" />
+              <textarea
+                id="message"
+                type="message"
+                name="message"
+                rows="5"
+                placeholder="Your message"
+                required
+              ></textarea>
             </div>
             <input
               type="submit"

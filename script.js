@@ -1,4 +1,9 @@
 'use strict'
+
+const emailBC = 'balthazar.coquard@gmail.com'
+const linkedinBC = 'https://www.linkedin.com/in/balthazar-coquard/'
+const githubBC = 'https://github.com/BalthazarCoq'
+
 document.addEventListener('DOMContentLoaded', (event) => {
   document
     .getElementById('btn-download')
@@ -54,5 +59,28 @@ addOpenLinkButtonListener(
   'link-python-blackjack',
   'https://github.com/BalthazarCoq/game-blackjack',
 )
+addOpenLinkButtonListener('btn-navbar', '#contact')
 
-href = '#projects'
+/* CONTACT-FORM */
+document
+  .getElementById('contact-form')
+  .addEventListener('submit', function (event) {
+    event.preventDefault()
+  })
+
+document
+  .getElementById('email-form')
+  .addEventListener('submit', function (event) {
+    event.preventDefault()
+
+    const recipient = 'recipient@example.com' // Change this to the recipient's email address
+    const fromEmail = encodeURIComponent(
+      document.getElementById('fromEmail').value,
+    )
+    const subject = encodeURIComponent(document.getElementById('object').value)
+    const message = encodeURIComponent(document.getElementById('message').value)
+
+    const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${message}%0D%0A%0D%0AFrom,%0D%0A${fromEmail}`
+
+    window.location.href = mailtoLink
+  })

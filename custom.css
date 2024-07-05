@@ -306,8 +306,9 @@ a.boxhead:active {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  display: grid;
   align-items: center;
   justify-content: center;
 }
@@ -317,35 +318,72 @@ a.boxhead:active {
 }
 
 .div-bg-light {
-  background-color: var(--light);
-  height: 50rem;
-  padding: 10rem 0 10rem 0;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 5rem;
   width: 100%;
+  justify-content: center;
   text-align: center;
+  background-color: var(--light);
 }
 
 /* Styling of the -- Skills -- section */
+.skill.section-control {
+  height: 70rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h2.section-title {
+  margin-bottom: 5rem;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  padding: 1rem;
+  position: absolute;
+  top: 10%; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.skill-bg {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.skill-bg.light {
+  background-color: var(--light);
+}
+
+.skill-bg.dark {
+  background-color: var(--dark);
+}
 
 .overlay-skills {
   display: flex;
-  position: relative;
-  top: 100%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10; /* Ensure it is on top of other elements */
+
   width: 120rem;
-  height: 40rem;
+  height: 50%;
+  min-height: 40rem;
   background-color: var(--light);
+
   border-style: solid;
   border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
   border-color: var(--dark);
 
   border-radius: 0.75rem;
-
   color: var(--dark);
-  text-align: center;
-  line-height: 10rem; /* Vertically center text */
-  z-index: 10; /* Ensure it is on top of other elements */
 }
 .control-skill {
   position: relative;
@@ -482,6 +520,7 @@ p.skill {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 4rem;
 }
 
 h2.project-title {
@@ -732,9 +771,12 @@ input[type='email'] {
   border-radius: 1rem;
   background-color: var(--tertiary-60);
   color: var(--dark);
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
-input[type='message'] {
+textarea[type='message'] {
   width: 100%; /* Width ratio */
   height: 100%; /* Adjust as necessary for height */
   padding: 0.5em;
@@ -743,16 +785,29 @@ input[type='message'] {
   border-radius: 2rem;
   background-color: var(--tertiary-60);
   color: var(--dark);
+  top: 1rem;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 input[type='text']::placeholder,
-input[type='email']::placeholder {
+input[type='email']::placeholder,
+input[type='text']::-ms-value,
+input[type='email']::-ms-value {
   color: var(--dark);
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
-input[type='message']::placeholder {
+textarea[type='message']::placeholder,
+textarea[type='message']::-ms-value {
   color: var(--dark);
   position: relative;
-  top: -4.5rem;
+  top: 1rem;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .btn.btn-send-form {
