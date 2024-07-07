@@ -329,7 +329,7 @@ a.boxhead:active {
   background-color: var(--light);
 }
 
-/* Styling of the -- Skills -- section */
+/* -- Skills -- section */
 .skill.section-control {
   height: 70rem;
   width: 100%;
@@ -513,7 +513,7 @@ p.skill {
   font-weight: bold;
 }
 
-/* MY PROJECTS - Styling of the -- My projects -- section */
+/* MY PROJECTS section */
 
 .project-container {
   display: flex;
@@ -578,6 +578,40 @@ h2.project-title {
   background-color: var(--primary-10);
 }
 
+.btn-play-container {
+  width: 10rem;
+  height: calc(10rem * 0.4047); /*height-per-width ratio of the original image*/
+  border: none;
+  overflow: hidden; /* Hide overflow content */
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the child */
+}
+.btn-play-link {
+  display: inline-block;
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Link text color */
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* Smooth animation */
+  cursor: url('/assets/custom-cursor-paw-select.svg'), pointer;
+}
+
+.btn-play {
+  background-image: url('assets/btn-play.svg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.btn-play:hover {
+  background-image: url('assets/btn-play-hover.svg');
+}
+
+.btn-play:active {
+  background-image: url('assets/btn-play.svg');
+}
+
 #left-card1 {
   border-radius: 0.75rem 0.75rem 0 0;
 }
@@ -604,9 +638,22 @@ span.card-category {
   font-size: 2.5rem;
 }
 
-h3.card-title {
+.h3-card-title-1l {
   position: absolute;
-  top: 55%;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the child */
+  width: 80%;
+  font-size: 24px;
+  color: var(--dark);
+  margin: 0 0 0 0;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.h3-card-title-2l {
+  position: absolute;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the child */
   width: 80%;

@@ -82,25 +82,24 @@ function openWindowEmail(elementID = str) {
 // Redirect to Link
 openLink(
   'link-python-conterter-ofx',
-  'https://github.com/CoquardBalthazar/ofxToCSV',
+  'https://github.com/CoquardBalthazar/ofxToCSV-py',
 )
 openLink('link-js-pig-game', 'https://github.com/CoquardBalthazar/pigGame-js')
+
 openLink(
   'link-mspa-approval-request',
-  'https://github.com/CoquardBalthazar/mspa-approval-request-apps',
+  'https://github.com/CoquardBalthazar/MS-Pwapps_approval-request',
+)
+
+openLink(
+  'link-python-blackjack',
+  'https://github.com/CoquardBalthazar/blackjack-game-py',
 )
 openLink(
   'link-js-guess-my-number',
   'https://github.com/CoquardBalthazar/guessMyNumber-js',
 )
-openLink(
-  'link-python-blackjack',
-  'https://github.com/CoquardBalthazar/game-blackjack',
-)
-openLink(
-  'link-python-blackjack',
-  'https://github.com/CoquardBalthazar/game-blackjack',
-)
+
 openLink('iconLinkedin1', linkedinBC)
 openLink('iconGithub1', githubBC)
 openLink('iconLinkedin2', linkedinBC)
