@@ -110,3 +110,21 @@ openLinkSameWindow('btn-navbar', '#contact')
 
 openWindowEmail('iconEmail1')
 openWindowEmail('iconEmail2')
+
+// RESPONSIVENESS
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.getElementById('menu-icon')
+  const navLinks = document.getElementById('navbar-ctrl-items')
+  const backButton = document.getElementById('navbar-hide')
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show')
+    backButton.classList.remove('hide')
+  })
+
+  backButton.addEventListener('click', () => {
+    navLinks.classList.remove('show')
+    backButton.classList.add('hide')
+  })
+})

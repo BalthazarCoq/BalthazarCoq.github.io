@@ -169,7 +169,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  height: 8rem;
   width: 100%;
 }
 
@@ -177,6 +177,7 @@ p {
 .navbar-ctrl-brand {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 30rem;
   height: 5rem;
   margin: 1rem 5rem;
@@ -223,6 +224,37 @@ a.boxhead:active {
 #btn-navbar {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+.navbar-hide {
+  display: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+.menu-icon .bar1 {
+  width: 6rem;
+  height: 0.6rem;
+  margin: 0.8rem 0;
+  background-color: var(--primary-60);
+}
+.menu-icon .bar2 {
+  width: 6rem;
+  height: 0.6rem;
+  margin: 0.8rem 0;
+  background-color: var(--secondary);
+}
+.menu-icon .bar3 {
+  width: 6rem;
+  height: 0.6rem;
+  margin: 0.8rem 0;
+  background-color: var(--tertiary);
 }
 
 /* INTRODUCTION - Left : Content*/
@@ -312,6 +344,7 @@ a.boxhead:active {
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .content-width {
@@ -927,6 +960,189 @@ p.to-do {
   margin: 0 0 0 0;
   font-style: italic;
 }
-.up {
-  margin: 15rem;
+
+/* Media Queries for Phone */
+@media (max-width: 420px) {
+  /*NAVBAR*/
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+  }
+
+  .navbar-ctrl-brand {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 30rem;
+    height: 5rem;
+  }
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .navbar-hide {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+  .navbar-hide.hide {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar-ctrl-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    font-family: inherit;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0rem;
+
+    #btn-navbar {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+
+  .navbar-ctrl-items.show {
+    display: flex;
+  }
+
+  /*INTRODUCTION */
+  .introduction.control {
+    width: 100%;
+    height: 120rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
+  .introduction.content {
+    align-self: flex-end;
+    margin: 12rem 0 5rem 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    padding: 0;
+  }
+  .introduction.logo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+  }
+  .img-intro {
+    display: block;
+    max-width: 100%; /* Optional: Ensure the image is responsive */
+  }
+
+  #h1-subtitle {
+    align-self: center;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+
+  .social-media-control {
+    justify-content: center; /* Center horizontally */
+  }
+
+  .btn-introduction {
+    align-self: center;
+    margin: 3rem 0 3rem 0;
+  }
+
+  /* Skill*/
+  .div-bg-light {
+    height: 70rem;
+    padding-top: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .content-width {
+    width: 80%;
+    margin: 5rem;
+  }
+
+  .skill.section-control {
+    height: 70rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  h2.section-title {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    position: absolute;
+    top: 10%; /* Distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .skill-bg {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .skill-bg.light {
+    background-color: var(--light);
+  }
+
+  .skill-bg.dark {
+    background-color: var(--dark);
+  }
+
+  .overlay-skills {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it is on top of other elements */
+
+    width: 100%;
+    height: 150rem;
+    min-height: 40rem;
+  }
+  .control-skill {
+    position: relative;
+    max-height: 100%;
+    width: 33.333%;
+    z-index: 20;
+
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
+      box-shadow 0.3s;
+  }
 }
