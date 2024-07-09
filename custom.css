@@ -1328,6 +1328,9 @@ p.to-do {
     width: 100%;
     padding: 0;
   }
+  .contact.social-media-control {
+    height: 7rem;
+  }
 
   /*FOOTER*/
   .footer {
