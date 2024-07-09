@@ -816,7 +816,7 @@ h2.contact {
   width: 70%;
 }
 p.contact {
-  width: 70%;
+  width: 75%;
   margin: 0 0 2rem 0;
 }
 
@@ -1029,15 +1029,15 @@ p.to-do {
   /*INTRODUCTION */
   .introduction.control {
     width: 100%;
-    height: 120rem;
+    height: 90rem;
     display: flex;
     flex-direction: column;
-    padding: 5rem 0;
+    padding: 0;
   }
 
   .introduction.content {
     align-self: flex-end;
-    margin: 12rem 0 5rem 0;
+    margin: 12rem 0 0 0;
     width: 100%;
     display: flex;
     text-align: center;
@@ -1045,10 +1045,11 @@ p.to-do {
     padding: 0;
   }
   .introduction.logo-form {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 39rem;
     padding: 0rem;
   }
   .img-intro {
@@ -1074,7 +1075,7 @@ p.to-do {
 
   /* Skill*/
   .div-bg-light {
-    height: 70rem;
+    height: 60rem;
     padding-top: 0;
   }
 
@@ -1094,7 +1095,7 @@ p.to-do {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    height: 200rem;
+    height: 180rem;
     width: 100%;
   }
 
@@ -1129,6 +1130,7 @@ p.to-do {
     display: flex;
     flex-direction: column;
 
+    border-width: 0.1rem;
     width: 100%;
     height: 120rem;
     min-height: 40rem;
@@ -1139,6 +1141,7 @@ p.to-do {
   }
   #skill-1 {
     border: none;
+    border-radius: 0.75rem 0.75rem 0 0;
   }
 
   #skill-2 {
@@ -1147,7 +1150,9 @@ p.to-do {
 
   #skill-3 {
     border: none;
+    border-radius: 0 0 0.75rem 0.75rem;
   }
+
   /* MY PROJECTS section */
 
   .project-container {
@@ -1168,7 +1173,7 @@ p.to-do {
     justify-content: flex-start;
     align-items: center;
     background-color: var(--dark);
-    height: 300rem; /* 30rem x10 */
+    height: 315rem; /* 30rem x10 +1*15rem for Spacing before contact section */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1189,14 +1194,13 @@ p.to-do {
     width: 100%;
     height: 100%;
     border-radius: 0.75rem;
-
     top: 0;
     z-index: 10;
   }
   .project-column.right {
     background-color: transparent;
     width: 100%;
-    height: 100%;
+    height: 270rem; /*Spacing before contact section*/
     border-radius: 0.75rem;
 
     top: 30rem;
@@ -1259,182 +1263,58 @@ p.to-do {
   /* Contact me*/
 
   .contact.div-bg-yellow {
-    background-color: var(--tertiary-10);
-    height: 65rem;
-    padding: 3% 0 0 0;
+    height: 110rem;
+    padding: 0;
     width: 100%;
-    display: flex; /*NONE DISPLAY for correcting skills*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
   }
 
   .contact.div-form {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: left;
-    background-color: var(--tertiary-10);
-    height: 100%;
-    width: 50%;
-    padding: 0 0 0 15%;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    padding: 0;
     position: relative;
+    justify-content: flex-start;
   }
   .contact.div-bear {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--tertiary-10);
-    height: 100%;
-    width: 50%;
-  }
-
-  h2.contact {
-    padding: 0 0 0 0;
-    margin: 8rem 0 2rem 0;
-    width: 70%;
-  }
-  p.contact {
-    width: 70%;
-    margin: 0 0 2rem 0;
+    height: auto;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 2rem 2rem 0;
-  }
-  .input-contact-details {
-    display: flex;
-    align-self: flex-start;
-    width: 100%;
-    gap: 5%; /* Space between the input boxes */
-  }
-
-  .input-message {
-    padding-top: 1rem;
-    padding-bottom: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 15rem;
-    margin: 1rem 0 0 0;
-  }
-
-  input[type='text'],
-  input[type='email'] {
-    width: 45%;
-    height: 2.5rem; /* Adjust as necessary for height */
-    padding: 0.5em;
-    margin-bottom: 2rem; /* Space below the input fields */
-    border: 1px solid var(--dark);
-    border-radius: 1rem;
-    background-color: var(--tertiary-60);
-    color: var(--dark);
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-  }
-
-  textarea[type='message'] {
-    width: 100%; /* Width ratio */
-    height: 100%; /* Adjust as necessary for height */
-    padding: 0.5em;
-    margin-bottom: 20px; /* Space below the input fields */
-    border: 1px solid var(--dark);
-    border-radius: 2rem;
-    background-color: var(--tertiary-60);
-    color: var(--dark);
-    top: 1rem;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-  }
-
-  input[type='text']::placeholder,
-  input[type='email']::placeholder,
-  input[type='text']::-ms-value,
-  input[type='email']::-ms-value {
-    color: var(--dark);
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-  }
-  textarea[type='message']::placeholder,
-  textarea[type='message']::-ms-value {
-    color: var(--dark);
-    position: relative;
-    top: 1rem;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
+    padding: 0;
+    margin: 3rem;
   }
 
   .btn.btn-send-form {
-    background-color: var(--tertiary);
-    border: 1px solid var(--dark);
-    border-radius: 1rem;
-    width: 12rem;
-    align-self: flex-start;
-    margin: 5.5rem 0 0 0;
-  }
-  .btn.btn-send-form:hover {
-    background-color: var(--tertiary-10);
-    color: var(--dark);
-    border-color: var(--dark);
-  }
-
-  .btn.btn-send-form:active {
-    background-color: var(--tertiary);
-    color: var(--dark);
+    align-self: center;
   }
 
   .bear-logo {
-    height: 60%;
-    width: 70%;
-    padding: 5rem 5rem 5rem 5rem;
-    justify-self: center;
-    align-self: center;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-  }
-
-  p.email {
-    width: 70%;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    padding: 1rem 0 1rem 0;
-  }
-
-  .contact.social-media-control {
-    width: 70%;
-    justify-content: center;
-    align-self: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
   }
 
   /*FOOTER*/
   .footer {
-    height: 10rem;
-    width: 100%;
-    background-color: var(--tertiary-10);
-    display: none; /*NONE DISPALY FOR CORRECTING PROJECTS*/
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    width: 101%;
+    height: 20rem;
+    margin: -0.1rem;
   }
 
   p.developped-by {
-    color: var(--dark);
-    height: 2rem;
-    position: absolute;
-    top: 1rem;
-    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
   }
   p.to-do {
-    color: var(--dark);
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    font-style: italic;
+    padding: 0;
+    margin: 0;
   }
 }
