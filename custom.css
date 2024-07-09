@@ -205,7 +205,7 @@ a.boxhead:active {
 .navbar-ctrl-items {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin: 1rem 5rem;
   max-width: calc(
     100% - 30rem
@@ -218,12 +218,11 @@ a.boxhead:active {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 #btn-navbar {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin: 1.5rem 5rem;
 }
 .navbar-hide {
   display: none;
@@ -236,7 +235,7 @@ a.boxhead:active {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .menu-icon .bar1 {
   width: 6rem;
@@ -999,13 +998,12 @@ p.to-do {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 35rem;
+    height: 22rem;
   }
 
   .navbar-ctrl-brand {
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 3rem 0;
     width: 30rem;
     height: 5rem;
   }
@@ -1015,7 +1013,7 @@ p.to-do {
   }
   .navbar-hide {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 20rem;
   }
   .navbar-hide.hide {
     display: none;
@@ -1059,7 +1057,7 @@ p.to-do {
   /*INTRODUCTION */
   .introduction.control {
     width: 100%;
-    height: 90rem;
+    height: 70rem;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -1067,7 +1065,7 @@ p.to-do {
 
   .introduction.content {
     align-self: flex-end;
-    margin: 12rem 0 0 0;
+    margin: 3rem 0 0 0;
     width: 100%;
     display: flex;
     text-align: center;
@@ -1089,7 +1087,7 @@ p.to-do {
 
   #h1-subtitle {
     align-self: center;
-    margin-top: 20rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     width: 80%;
   }
@@ -1105,7 +1103,7 @@ p.to-do {
 
   /* Skill*/
   .div-bg-light {
-    height: 60rem;
+    height: 58rem;
     padding-top: 0;
   }
 
@@ -1160,7 +1158,7 @@ p.to-do {
     display: flex;
     flex-direction: column;
 
-    border-width: 0.1rem;
+    border-style: none;
     width: 100%;
     height: 120rem;
     min-height: 40rem;
@@ -1203,7 +1201,7 @@ p.to-do {
     justify-content: flex-start;
     align-items: center;
     background-color: var(--dark);
-    height: 315rem; /* 30rem x10 +1*15rem for Spacing before contact section */
+    height: 300rem; /* 30rem x10 +1*15rem for Spacing before contact section */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1287,7 +1285,7 @@ p.to-do {
     border-radius: 0;
   }
   #right-card5 {
-    border-radius: 0 0 0.75rem 0.75rem;
+    border-radius: 0 0 0 0;
   }
 
   /* Contact me*/
