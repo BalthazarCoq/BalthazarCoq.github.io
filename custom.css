@@ -1223,7 +1223,6 @@ p.to-do {
     height: 100%;
     border-radius: 0.75rem;
     top: 0;
-    z-index: 10;
   }
   .project-column.right {
     background-color: transparent;
@@ -1232,7 +1231,6 @@ p.to-do {
     border-radius: 0.75rem;
 
     top: 30rem;
-    z-index: 20;
   }
 
   .project-card {
@@ -1242,6 +1240,7 @@ p.to-do {
     padding: 0;
     position: relative;
     display: flex;
+    z-index: 30;
   }
 
   #left-card1 {
