@@ -961,6 +961,36 @@ p.to-do {
   font-style: italic;
 }
 
+#return-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 5rem;
+  height: 4rem;
+  cursor: url('/assets/custom-cursor-paw-select.svg'), pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 30;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+#return-to-top img {
+  width: 100%;
+  height: 100%;
+}
+
+#return-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Media Queries for Phone */
 @media (max-width: 420px) {
   /*NAVBAR*/
@@ -1059,7 +1089,7 @@ p.to-do {
 
   #h1-subtitle {
     align-self: center;
-    margin-top: 15rem;
+    margin-top: 20rem;
     margin-bottom: 3rem;
     width: 80%;
   }

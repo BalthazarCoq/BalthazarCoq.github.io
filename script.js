@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.getElementById('menu-icon')
   const navLinks = document.getElementById('navbar-ctrl-items')
   const backButton = document.getElementById('navbar-hide')
+  const navAboutMe = document.getElementById('nav-about-me')
+  const navSkills = document.getElementById('nav-skills')
+  const navProjects = document.getElementById('nav-projects')
+  const navContact = document.getElementById('btn-navbar')
 
   menuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('show')
@@ -127,4 +131,44 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.classList.remove('show')
     backButton.classList.add('hide')
   })
+
+  navAboutMe.addEventListener('click', () => {
+    navLinks.classList.remove('show')
+    backButton.classList.add('hide')
+  })
+  navSkills.addEventListener('click', () => {
+    navLinks.classList.remove('show')
+    backButton.classList.add('hide')
+  })
+  navProjects.addEventListener('click', () => {
+    navLinks.classList.remove('show')
+    backButton.classList.add('hide')
+  })
+  navContact.addEventListener('click', () => {
+    navLinks.classList.remove('show')
+    backButton.classList.add('hide')
+  })
 })
+
+// Function to handle the scroll event
+function handleScroll() {
+  const returnToTopButton = document.getElementById('return-to-top')
+  if (window.scrollY > 250) {
+    // Show the button after scrolling down 200px
+    returnToTopButton.classList.add('visible')
+  } else {
+    returnToTopButton.classList.remove('visible')
+  }
+}
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Smooth scrolling
+  })
+}
+
+// Add event listeners
+window.addEventListener('scroll', handleScroll)
+document.getElementById('return-to-top').addEventListener('click', scrollToTop)
